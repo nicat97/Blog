@@ -1,0 +1,29 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    overflow-x: hidden;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+#form{
+    padding: 50px;
+}
+#login, #registerSubmit{
+    margin-top: 2%;
+    float: right;
+}
+#reset{
+    float: left;
+    margin-top: 4%;
+}
+#reg{
+    padding: 15%;
+}
+#registerTab, #loginTab{
+    cursor: pointer;
+}
