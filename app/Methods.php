@@ -30,6 +30,23 @@ class Methods{
 
     }
 
+    public function issetPage($page){
+        $pagesList = array();
+        $page .= ".php";
+
+        $handle = opendir('app/pages');
+
+        while (false !== ($entry = readdir($handle))) {
+            $pagesList[] = $entry;
+        }
+
+        closedir($handle);
+
+        $status = in_array($page, $pagesList); //true və ya false dəyərini verir
+
+        return $status;
+
+    }
 }
 
 
